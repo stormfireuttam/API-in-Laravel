@@ -22,3 +22,7 @@ Route::get('country', 'Country\CountryController@country');
 Route::get('country/{id}', 'Country\CountryController@countryById');
 //Route to add a new country
 Route::post('country', 'Country\CountryController@createCountry');
+//Route to edit a country
+Route::put('country/{country}', 'Country\CountryController@updateCountry');
+//Route to delete a country
+Route::delete('country/{country}', 'Country\CountryController@deleteCountry');
