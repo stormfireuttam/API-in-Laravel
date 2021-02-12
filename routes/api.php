@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('country', 'Country\CountryController@country');
 //Route to get a specific country
 Route::get('country/{id}', 'Country\CountryController@countryById');
+//Route to add a new country
+Route::post('country', 'Country\CountryController@createCountry');
