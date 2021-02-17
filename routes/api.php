@@ -16,13 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-//Route to get all the countries
-Route::get('country', 'Country\CountryController@country');
-//Route to get a specific country
-Route::get('country/{id}', 'Country\CountryController@countryById');
-//Route to add a new country
-Route::post('country', 'Country\CountryController@createCountry');
-//Route to edit a country
-Route::put('country/{id}', 'Country\CountryController@updateCountry');
-//Route to delete a country
-Route::delete('country/{id}', 'Country\CountryController@deleteCountry');
+/*
+    //Route to get all the countries
+    Route::get('country', 'Country\CountryController@country');
+    //Route to get a specific country
+    Route::get('country/{id}', 'Country\CountryController@countryById');
+    //Route to add a new country
+    Route::post('country', 'Country\CountryController@createCountry');
+    //Route to edit a country
+    Route::put('country/{id}', 'Country\CountryController@updateCountry');
+    //Route to delete a country
+    Route::delete('country/{id}', 'Country\CountryController@deleteCountry');
+*/
+//Resourceful routes
+Route::apiResource('country', 'Country\Country');
