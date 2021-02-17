@@ -29,3 +29,10 @@ class BasicAuth
 
 //Oauth is an open-standard authorization protocol or framework
 //Oauth doesn't share password data but instead uses authorization tokens between consumers and service providers
+//The examples of OAuth are Facebook and other authentications
+/*
+ * Step 1: You visit a website
+ * Step 2: Join us using any of these service providers
+ * Step 3: You are redirected to the selected service provider.
+ * Step 4: You are given permission
+ */
