@@ -26,3 +26,6 @@ class BasicAuth
         }
     }
 }
+
+//Oauth is an open-standard authorization protocol or framework
+//Oauth doesn't share password data but instead uses authorization tokens between consumers and service providers
